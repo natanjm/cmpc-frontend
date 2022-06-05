@@ -14,15 +14,14 @@
     fetch(nurseriesUrl)
 			.then(response => response.json())
 			.then(data => {
-				nurseries =  data
-				console.log(nurseries)
+				nurseries = data
 			})
 
 		fetch(`${sensorsUrl}/${params.id}`)
       .then(response => response.json())
       .then(data => {
-        sensor_type =  data.sensor_type
-        nursery_id =  data.nursery_id
+        sensor_type = data.sensor_type
+        nursery_id = data.nursery_id
       })
 	})
 

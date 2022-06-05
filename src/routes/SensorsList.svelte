@@ -10,6 +10,8 @@
 	onMount(async () => {
 		const response = await fetch(baseUrl)
 		sensors = await response.json()
+		console.log(response)
+		console.log(sensors)
 	})
 
 	async function formDeleteHandler(id) {
